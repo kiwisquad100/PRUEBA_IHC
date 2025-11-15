@@ -1,0 +1,244 @@
+.topheader {
+  position: fixed;
+  background-color: aquamarine;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li a {
+  text-decoration: none;
+  color: black;
+}
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  width: 12.5rem;
+}
+.Menu-Horizontal li a:hover {
+  color: blueviolet;
+  font-size: 1.25rem;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Vertical li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.625rem;
+}
+.Menu-Vertical li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.625rem;
+}
+
+.seccion-creditos {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.cont-gral-creditos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.cont-cred-texto {
+  flex: 1;
+}
+,
+.cont-cred-texto h2 {
+  color: blue;
+  margin-bottom: 0.938rem;
+}
+
+.cont-cred-texto p {
+  color: black;
+  line-height: 1.6;
+}
+.cont-cred-img {
+  flex: 1;
+}
+
+.cont-cred-img img {
+  width: 100%;
+  max-width: 31.25rem;
+  border-radius: 0.625rem;
+}
+.sección-seguros {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.cont-gral-seguros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.cont-seg-texto {
+  flex: 1;
+}
+.cont-seg-texto h2 {
+  color: blue;
+  line-height: 1.6;
+}
+.cont-seg-texto button {
+  margin-top: 1.25rem;
+  padding: 0.625rem 1.25rem;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+.cont-seg-video {
+  flex: 1;
+}
+.cont-seg-video iframe {
+  width: 100%;
+  max-width: 31.25rem;
+}
+.cont-seg-texto buttom {
+  margin-top: 1.25rem;
+  padding: 0.625rem 1.25rem;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+.cont-seg-video {
+  flex: 1;
+}
+.cont-seg-video iframe {
+  width: 100%;
+  max-width: 31.25rem;
+}
+/*formulario*/
+.seccion-formulario {
+  background-color: rgb(138, 181, 219);
+  padding: 2.5rem;
+  border: 0.188rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.cont-gral-formulario {
+  background-color: beige;
+  padding: 1.875rem;
+  border: 0.125re solid rgb(136, 136, 231);
+  border-radius: 0.5rem;
+  margin-bottom: 1.875rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+.campo {
+  background-color: rgb(138, 181, 219);
+  padding: 0.938rem;
+  border: 0.094rem solid red;
+  border-radius: 0.313rem;
+  margin-bottom: 1.563rem;
+  width: 100%;
+  max-width: 30rem;
+}
+.formulario label {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: purple;
+}
+.formulario input[type="text"],
+.formulario select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.094rem solid rgb(29, 29, 134);
+  border-radius: 0.313rem;
+  box-sizing: border-box;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.5rem;
+  border: 0.063rem solid rgb(28, 221, 28);
+  background-color: rgb(135, 231, 199);
+  border-radius: 0.313rem;
+}
+.formulario button {
+  background-color: rgb(192, 94, 24);
+  padding: 0.625rem 1.25rem;
+  color: #05056c;
+  border: 0.125rem solid #05056c;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+/*pie de pagina*/
+.seccion-footer {
+  background-color: aqua;
+  color: rgb(5, 5, 78);
+  padding: 2.5rem 1.25rem;
+}
+.cont-gral-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.footer-info {
+  flex: 1;
+}
+.footer-info h3 {
+  color: blue;
+  margin-bottom: 0.938rem;
+}
+.footer-redes {
+  flex: 1;
+}
+.footer-redes h3 {
+  color: blue;
+  margin-bottom: 0.938rem;
+}
+.lista-redes {
+  list-style: none;
+  padding: 0;
+}
+.lista-redes li {
+  margin-bottom: 0.5rem;
+}
+.lista-redes li a {
+  text-decoration: none;
+  color: blueviolet;
+}
+.footer-politica {
+  flex: 1;
+}
+.footer-politica h3 {
+  color: blue;
+  margin-bottom: 0.938rem;
+}
+.lista-proteccion {
+  list-style: none;
+  padding: 0;
+}
+.lista-proteccion li {
+  margin-bottom: 0.5rem;
+}
+.lista-proteccion li a {
+  text-decoration: none;
+  color: blueviolet;
+}
