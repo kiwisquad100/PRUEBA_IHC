@@ -57,7 +57,6 @@
 .cont-cred-texto {
   flex: 1;
 }
-,
 .cont-cred-texto h2 {
   color: blue;
   margin-bottom: 0.938rem;
@@ -70,7 +69,6 @@
 .cont-cred-img {
   flex: 1;
 }
-
 .cont-cred-img img {
   width: 100%;
   max-width: 31.25rem;
