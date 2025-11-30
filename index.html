@@ -1,171 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Kiwi</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="Pie.css" />
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <nav class="topheader">
-      <a href="" class="rivals">
-        <img height="80" width="90" src="LOGO/rivals.jpg" alt="" />
-      </a>
-      <ul class="Menu-Horizontal">
-        <li><a href="#creditos">Creditos</a></li>
-        <li>
-          <a href="">Cuentas</a>
-          <ul class="Menu-Vertical">
-            <li><a href="">Cuenta Sueldo</a></li>
-            <li><a href="">Club Emprendedor</a></li>
-            <li><a href="">Yape y Plin</a></li>
-            <li><a href="">Depositos</a></li>
-          </ul>
-        </li>
-        <li><a href="#seguros">Seguros</a></li>
-        <li><a href="#contactanos">Contactos</a></li>
-      </ul>
-    </nav>
-    <!--Seccion Creditos-->
-    <section class="seccion-creditos" id="creditos">
-      <div class="cont-gral-creditos">
-        <div class="cont-cred-texto">
-        <h2>Seccion de Creditos</h2>
-        <p>
-          El crédito es una herramienta financiera que permite obtener dinero o
-          bienes ahora y pagarlos después. Facilita alcanzar metas como
-          estudiar, emprender o adquirir una vivienda. Sin embargo, usarlo con
-          responsabilidad es clave: un buen manejo fortalece tu historial
-          crediticio, mientras que el exceso de deudas puede convertirse en un
-          problema.
-        </p>
-      </div>
-        <div class="cont-cred-img">
-        <img src="LOGO/imagen.jpg" />
+    <section class="login-container">
+      <div class="login-box">
+        <h2>Inicio de Sesión</h2>
+
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
       </div>
     </section>
-    <!--Seccion Seguros-->
-  <section class="sección-seguros" id="seguros">
-  <div class="cont-gral-seguros">
-    <div class="cont-seg-texto">
-      <h2>Seccion Seguros</h2>
-      <p> 
-        Los terminos y condiciones del Contrato de Seguros pueden ser objeto de negociación entre el contratante y 
-        la compañía de seguros, dentro del amrco legal dispuesto por las normas vigentes que regulan el Contrato de Seguro y el Sistema 
-        de Seguros, el que contempla una protección especial en el caso de los seguros personales, obligatorios y masivos, 
-        respecto a los cuales dispone la aprobación administrativa previa de sus condiciones mínimas por parte de la 
-        Superintendencia de Banca, Seguros y AFP (en adelante, la Superintendencia).
-      </p>
-      <p> 
-        Las cláusulas no contempladas como condiciones mínimas por la ley no son materia de 
-        aprobación por esta Superintendencia; siendo que algunas de ellas, 
-        como la que regula el tratamiento de datos personales, se encuentran bajo el ámbito
-        de competencia de otras entidades, en cuyo caso pueden o no incorporarse en los modelos de pólizas 
-        que se muestran en precitado Registro.
-      </p>
-      <buttom>Leer más...</buttom>
-    </div>
 
-    <div class="cont-seg-video">
-
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/W-MwmfLFlM0?si=Gunu84SEPzPuMcWg" 
-      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-      gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    </div>
-  </section>
-    <section class="seccion-formulario" id="contactanos">
-    <div class="cont-gral-formulario">
-      <h2>Formulario de registro</h2>
-      <p>Complete todos los datos y sus preferencias</p>
-
-      <form class="formulario">
-        <div class="campo">
-          <label form="nombre">Nombres Completos:</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="ingrese su nombre"
-          />
-        </div>
-        <div class="campo">
-          <label for="pais">Pais:</label>
-          <select id="pais" name="pais">
-            <option value="">Seleccione un pais</option>
-            <option value="Peru">Peru</option>
-            <option value="Peru">Argentina</option>
-            <option value="Peru">Brasil</option>
-            <option value="Peru">Mexico</option>
-          </select>
-        </div>
-        <div class="campo">
-          <label>Intereses:</label>
-          <ul class="lista-checkbox">
-            <li>
-              <label
-                ><input type="checkbox" name"intereses
-                value="tecnologia">Tecnologia</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="checkbox" name"intereses
-                value="educacion">Educacion</label
-              >
-            </li>
-            <li>
-              <label
-                ><input type="checkbox" name"intereses
-                value="idiomas">Idioma</label
-              >
-            </li>
-          </ul>
-        </div>
-      <div class="campo">
-      <label>Genero:</label>
-    <ul class="lista-radio">
-    <li>
-    <label><input type="radio" name"genero" value="masculino">Masculino</label></li>
-    <label><input type="radio" name"genero" value="femenino">Femenino</label></li>
-    <label><input type="radio" name"genero" value="otro">Otro</label></li>  
-    </ul>
-  </div>
-  <button type="submit">Enviar</button>
-  </form>
-    </div>
-  </section>
-  <!--PIE DE PAGINA-->
-  <section class="seccion-footer">
-    <div class="cont-gral-footer">
-       <div class="footer-info">
-        <h3>Acerca de nosotros</h3>
-        <p>Una página «Sobre nosotros» existe para compartir
-           la historia de un negocio y proporcionar una conexión más profunda con los clientes.</p>
-       <p>&copy: 2025 Todos los derechos reservados</p>
-      </div>
-       <div class="footer-redes">
-        <h3>Nuestras redes</h3>
-        <ul class="lista-redes">
-          <li> <a href="">Facebook</a></li>
-          <li> <a href="">Instagram</a></li>
-          <li> <a href="">Twitter</a></li>
-          <li> <a href="">TikTok</a></li>
-        </ul>
-        </div>
-        <!--POLITICAS Y PROTECCION D EDATOS-->
-        <div class="footer-politica">
-          <h3>Proteccion de datos</h3>
-          <ul class="lista-proteccion">
-            <li> <a href="LOGO/Ley_Proteccion_Datospdf.pdf" target="_black">Ley Proteccion de Datos</a></li>
-            <li> <a href="">Politicas</a></li>
-            <li> <a href="">Normas</a></li>
-            <li> <a href="">Reglamentos</a></li>
-          </ul>
-        </div>
-    </div>
-  </section>
+    <script src="login.js"></script>
   </body>
 </html>
