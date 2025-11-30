@@ -8,13 +8,13 @@
   width: 100%;
   /* Fondo atractivo para la vista de escritorio */
   background: linear-gradient(135deg, #6a11cb 0%, #044907 100%);
-  background-image: url("LOGO/jeffsito.jpg");
+  background-image: url("LOGO/jeffsitoo.jpg");
   padding: 1.25rem; /* 20px de padding */
 }
 
 /* La caja del formulario */
 .login-box {
-  background: rgb(50, 162, 226);
+  background: rgb(214, 138, 24);
   padding: 2.5rem; /* 40px */
   border-radius: 0.625rem; /* 10px */
   box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); /* Sombra */
