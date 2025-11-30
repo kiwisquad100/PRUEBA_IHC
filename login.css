@@ -21,23 +21,13 @@
   width: 100%;
   max-width: 60rem; /* 400px, el ancho máximo */
   text-align: center;
+  font-family: "Sansita Swashed", system-ui;
 }
 
 .login-box h2 {
   margin-bottom: 1.5625rem; /* 25px */
   color: #030303;
   font-size: 1.8rem;
-}
-.sansita-swashed-login-box h2 {
-  font-family: "Sansita Swashed", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
-/* División para agrupar Label e Input */
-.input-group {
-  margin-bottom: 1.25rem; /* 20px */
-  text-align: left;
 }
 
 .input-group label {
@@ -73,12 +63,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 0.625rem; /* 10px */
-}
-.sansita-swashed-login-button {
   font-family: "Sansita Swashed", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
 }
 
 .login-button:hover {
